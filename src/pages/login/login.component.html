@@ -1,0 +1,26 @@
+<div class="login">
+    <div class="login-box">
+        <div *ngIf="status=='scaning'">
+            <img class="qrcode" src="./assets/images/QRcode.png" alt="">
+            <div>
+                <p class="tip">扫码登录语讯</p>
+                <p class="sub-tip">请使用的手机配合登录</p>
+            </div>
+        </div>
+        <div *ngIf="status=='success'">
+            <img class="head-icon" src="./assets/images/head-icon.jpg" alt="">
+            <div>
+                <p class="scan-tip">扫码成功</p>
+                <p class="sub-tip">请在语讯中点击登录</p>
+            </div>
+            <div class="switch-account">
+                <span>切换账号</span>
+                <span class="right-arrow">></span>
+            </div>
+        </div>
+        <div *ngIf="status=='failed'">
+
+        </div>
+        <div class="overlay-circle"></div>
+    </div>
+</div>

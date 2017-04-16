@@ -1,0 +1,72 @@
+.login{
+    height: 100%;
+    min-width: 860px;
+    min-height: 700px;
+    overflow: auto;
+    position: relative;
+}
+
+.login-box{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 320px;
+    height: 400px;
+    margin-left: -160px;
+    margin-top: -200px;
+    text-align: center;
+    border: 1px solid #AAAAAA; 
+    box-shadow: 0px 2px 16px 2px rgba(0,0,0,.29); 
+    border-radius: 12px;
+    background-color: #FFFFFF;
+}
+
+.qrcode{
+    margin-top: 70px;
+}
+
+.tip{
+    font-size: 20px;
+    color: #212121;
+}
+
+.sub-tip{
+    font-size: 14px;
+    color:#666666;
+    line-height: 16px;
+}
+
+.scan-tip{
+    font-size: 20px;
+    color: #C38F13;
+}
+
+.overlay-circle{
+    position: absolute;
+    top:12px;
+    left: 12px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #CCCCCC;
+}
+
+.head-icon{
+    margin-top: 85px;
+    width: 128px;
+    height: 128px;
+    border-radius: 50%;
+    overflow: hidden;    
+}
+
+.switch-account{
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    font-size: 16px;
+    color: #999999;
+    line-height: 16px;
+}
+.right-arrow{
+    color: #999999;
+}
