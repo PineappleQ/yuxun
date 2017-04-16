@@ -1,0 +1,275 @@
+.main{
+    position: absolute;
+    height: 604px;
+    width: 980px;
+    top: 50%;
+    left: 50%;
+    margin-top: -302px;
+    margin-left: -490px;
+    box-shadow: 0px 2px 16px 2px rgba(0,0,0,.29); 
+    border: 1px solid #AAAAAA; 
+    border-radius: 12px;
+}
+
+.menu{
+    width: 72px;
+    height: 100%;
+    overflow-y: auto;
+    background-color: #1C2237;
+    border-radius: 12px 0 0 12px;
+}
+
+.chat-list{
+    width: 260px;
+    height: 100%;
+    position: relative;
+    background-color: #212943;
+}
+
+.main-item{
+    float: left;
+}
+
+.user-icon-container{
+    margin-top: 62px;
+    text-align: center;
+}
+
+.user-icon{
+    width: 48px;
+    height: 48px;
+    border-radius: 50%;
+}
+
+.func-list, .operate-btn-list{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.operate-btn-container{
+    margin-top: 10px;
+    &:after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.operate-btn{
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    float: left;
+    margin-left: 9px;
+}
+.operate-btn-a{
+    background-color: #FC635D;
+}
+.operate-btn-b{
+    background-color: #FBC241;
+}
+.operate-btn-c{
+    background-color: #6CFC42;
+}
+
+.func-item{
+    text-align: center;
+    margin-top: 27px;
+    font-size: 36px;
+}
+
+.func-item-msg{
+    opacity: 0.75;
+    color: #FC635D;
+}
+
+.func-item-contacts{
+    opacity: 0.65;
+    color: #0C92A1;
+}
+
+.func-item-collection{
+    opacity: 0.65;
+    color: #74D20E;
+}
+
+.search-area{
+    margin-top: 14px;
+    position: relative;
+    &:after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.search-item{
+    float: left;
+}
+
+.search-add-icon{
+    width: 22px;
+    height: 22px;
+    border: 1px solid rgba(208,208,208,0.21);
+    line-height: 19px;
+    margin-left: 12px;
+    border-radius: 5px;
+    font-size: 20px;
+    color: rgba(203,203,203,0.8);
+    text-align: center;
+}
+
+.search-text{
+    width: 200px;
+    height: 24px;
+    border-radius: 100px;
+    background: #1C2237;
+    text-align: center;
+    position: relative;
+    margin-left: 12px;
+}
+
+.search-input{
+    border: none;
+    background-color: transparent;
+    color: #FFFFFF;
+    &:focus{
+        outline: none;
+    }
+}
+
+.search-icon{
+    font-size: 12px;
+    color: #FFFFFF;
+}
+
+.search-tip-container{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.search-tip-text{
+    font-size: 12px;
+    color: #999999;
+    letter-spacing: 0;
+    line-height: 12px;
+}
+
+.contacts-list-container{
+    position: absolute;
+    top: 52px;
+    bottom: 0;
+    overflow-y: auto;
+    width: 100%;
+}
+
+.contacts-list{
+    cursor: pointer;
+    &:hover{
+        background-color: #1C2237;
+    }
+}
+
+.contacts-item{
+    height: 68px;
+}
+
+.contacts-info{
+    position: relative;
+    &:after{
+        display: block;
+        content: "";
+        clear: both;
+    }
+}
+
+.contacts-info-item{
+    float: left;
+    height: 44px;
+}
+
+.contacts-icon{
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    margin: 12px;
+    &:after{
+        content: "";
+        display: block;
+        clear: both;
+    }
+}
+
+.contacts-icon-group{
+    float: left;
+    width: 20px;
+    height: 20px;
+    padding: 1px;
+    background-color: #FFFFFF;
+}
+
+.contacts-icon-group0{
+    border-radius: 20px 0 0 0;
+}
+
+.contacts-icon-group1{
+    border-radius: 0 20px 0 0;
+}
+
+.contacts-icon-group2{
+    border-radius: 0 0 0 20px;
+}
+
+.contacts-icon-group3{
+    border-radius: 0 0 20px 0;
+}
+
+.contacts-detail-info{
+    position: absolute;
+    left: 68px;
+    right: 12px;
+    height: 100%;
+    border-bottom: 1px solid #373F55;
+}
+
+.contacts-detail-container{
+    position: absolute;
+    top: 50%;
+    margin-top: -22px;
+}
+
+.contacts-detail{
+    font-size: 12px;
+    color: rgba(255,255,255,0.39);
+    line-height: 12px;
+    margin-top: 8px;
+}
+
+.contacts-name{
+    opacity: 0.86;
+    font-size: 14px;
+    color: #FFFFFF;
+    line-height: 12px;
+    display: inline-block;
+    width: 117px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+.contacts-msg{
+    width: 160px;
+    display: inline-block;
+}
+
+@media screen and (max-width: 1050px){
+    .main{
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        margin: 0;
+        min-width: 335px;
+    }
+}

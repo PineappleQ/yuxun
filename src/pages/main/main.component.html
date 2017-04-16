@@ -1,0 +1,89 @@
+<div class="main">
+    <!-- 左侧菜单栏 -->
+    <div class="menu main-item">
+        <div class="operate-btn-container">
+            <ul class="operate-btn-list">
+                <li class="operate-btn operate-btn-a"></li>
+                <li class="operate-btn operate-btn-b"></li>
+                <li class="operate-btn operate-btn-c"></li>
+            </ul>
+        </div>
+        <div class="user-icon-container">
+            <img class="user-icon" src="./assets/images/head-icon.jpg" alt="">
+        </div>
+        <div class="func-node">
+            <ul class="func-list">
+                <li class="func-item func-item-msg">
+                    <i class="fa fa-commenting"></i>
+                </li>
+                <li class="func-item func-item-contacts">
+                    <i class="fa fa-user-circle-o"></i>
+                </li>
+                <li class="func-item func-item-collection">
+                    <i class="fa fa-cube"></i>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!-- 联系人列表 -->
+    <div class="chat-list main-item">
+        <div class="search-area">
+            <div class="search-text search-item">
+                <div (click)="searchClick()" class="search-tip-container" *ngIf="!inputText.length && !inputFocus">
+                    <i class="fa fa-search search-icon"></i>
+                    <span class="search-tip-text">搜索</span>
+                </div>
+                <input #searchInput [(ngModel)]="inputText" class="search-input" type="text">
+            </div>
+            <div class="search-item search-add-icon">
+                +
+            </div>
+        </div>
+        <div class="contacts-list-container">
+            <div class="contacts-list" *ngFor="let contacts of chatList">
+                <div class="contacts-item">
+                    <div class="contacts-info" *ngIf="contacts.isGroup">
+                        <div class="contacts-icon contacts-info-item">
+                            <div *ngFor="let con of contacts.users;let index=index;">
+                                <img class="{{'contacts-icon-group contacts-icon-group'+index}}" *ngIf="index < 4" src="{{con.pic}}" alt="">
+                            </div>
+                        </div>
+                        <div class="contacts-info-item">
+                            <div class="contacts-info-item contacts-detail-info">
+                                <div class="contacts-detail-container">
+                                    <div class="contacts-detail">
+                                        <span class="contacts-name contacts-detail-item">{{contacts.name}}</span>
+                                        <span class="contacts-detail-item">中午 12:00</span>
+                                    </div>
+                                    <div class="contacts-detail">
+                                        <span class="contacts-detail-item contacts-msg">测试信息</span>
+                                        <span class="fa fa-bell-slash contacts-detail-item"></span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="contacts-info" *ngIf="!contacts.isGroup">
+                        <img class="contacts-icon contacts-info-item" src="{{contacts.pic}}" alt="">
+                        <div class="contacts-info-item contacts-detail-info">
+                            <div class="contacts-detail-container">
+                                <div class="contacts-detail">
+                                    <span class="contacts-name contacts-detail-item">{{contacts.name}}</span>
+                                    <span class="contacts-detail-item">中午 12:00</span>
+                                </div>
+                                <div class="contacts-detail">
+                                    <span class="contacts-detail-item contacts-msg">测试信息</span>
+                                    <span class="fa fa-bell-slash contacts-detail-item"></span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- 聊天信息窗口 -->
+    <div class="chat-window main-item">
+        
+    </div>
+</div>

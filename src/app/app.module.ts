@@ -1,3 +1,4 @@
+import { MainModule } from './../pages/main/main.module';
 import { LoginModule } from './../pages/login/login.module';
 import { AppRoutingModule } from './../app.routes';
 import { BrowserModule } from '@angular/platform-browser';
@@ -16,7 +17,8 @@ import { AppComponent } from './app.component';
     FormsModule,
     HttpModule,
     AppRoutingModule,
-    LoginModule
+    LoginModule,
+    MainModule
   ],
   providers: [],
   bootstrap: [AppComponent]
